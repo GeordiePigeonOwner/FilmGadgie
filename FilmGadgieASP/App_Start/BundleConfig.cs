@@ -12,11 +12,11 @@ namespace FilmGadgieASP
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
-                "~/bower_componenets/jquery/dist/jquery-{version}.js"));
+                "~/bower_components/jquery/dist/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                "~/bower_componenets/jquery-validation-unobtrusive/jquery.unobtrusive*",
-                "~/bower_componenets/jquery-validation/dist/jquery.validate*"));
+                "~/bower_components/jquery-validation-unobtrusive/jquery.unobtrusive*",
+                "~/bower_components/jquery-validation/dist/jquery.validate*"));
 
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
@@ -25,12 +25,14 @@ namespace FilmGadgieASP
                 "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                "~/bower_componenets/bootstrap/dist/css/bootstrap.js",
-                "~/bower_componenets/respond/dist/css/respond.js"));
+                "~/bower_components/bootstrap/dist/js/bootstrap.js",
+                "~/bower_components/respond/dest/js/respond.js"));
+
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                 "~/Content/bootstrap.css",
+                "~/bower_components/bootstrap/dist/css/bootstrap.css",
                  "~/Content/Site.css"));
+
 
             //js bundles
             bundles.Add(

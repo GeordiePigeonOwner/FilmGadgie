@@ -1,6 +1,11 @@
-﻿@section SPAViews {
-    @Html.Partial("_Home")
+﻿@{
+    ViewBag.Title = "Home";
+    ViewBag.InitModule = "app";
+    ViewBag.BaseUrl = "/";
 }
+<div class="row">
+    <div ng-view></div>
+</div>
 @section Scripts{
     @Scripts.Render("~/bundles/knockout")
     @Scripts.Render("~/bundles/app")
