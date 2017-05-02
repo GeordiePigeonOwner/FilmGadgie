@@ -3,10 +3,10 @@
 (function () {
     "use strict";
 
-    angular.module("app-")
+    angular.module("app")
         .controller("filmThemeHomeController", filmThemeHomeController);
 
-    function filmThemeHomeController($scope, $uibModal, $location, $route)
+    function filmThemeHomeController($scope)
     {
         const vm = $scope;
         vm.isBusy = true;

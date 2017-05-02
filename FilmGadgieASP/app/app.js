@@ -3,31 +3,14 @@
     "use strict";
 
     //creating the module
-    angular.module("app",
-        ["ngRoute",
-            "ngAnimate"
-            //"ui.bootstrap",
-            //"simpleControls",
-           // "myValidation",
-           // "appConstants"
-        ])
+    angular.module("app",["ngRoute","ngAnimate"])
         .config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
             let baseUrl = "/";
             $routeProvider
                 .when(baseUrl,
                     {
-                        templateUrl: "/app/Filmtheme/index.html",
+                        templateUrl: "/app/FilmTheme/index.html",
                         controller: "filmThemeHomeController"
-                    })
-                .when("/newCustomerForm",
-                    {
-                        templateUrl: "/app/Customer/Views/commissioning.html",
-                        controller: "commissioningController"
-                    })
-                .when("/existingCustomerForm/:id",
-                    {
-                        templateUrl: "/app/Customer/Views/commissioning.html",
-                        controller: "commissioningController"
                     })
                 .otherwise({ redirectTo: baseUrl });
 

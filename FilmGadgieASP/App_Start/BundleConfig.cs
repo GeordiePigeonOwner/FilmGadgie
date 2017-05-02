@@ -12,6 +12,7 @@ namespace FilmGadgieASP
         public static void RegisterBundles(BundleCollection bundles)
         {
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+                "~/bower_components/jquery/dist/jquery.js",
                 "~/bower_components/jquery/dist/jquery-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
@@ -37,18 +38,30 @@ namespace FilmGadgieASP
             //js bundles
             bundles.Add(
                 new ScriptBundle("~/bundles/angular").Include(
-                    "~/Scripts/angular.js",
-                    "~/Scripts/angular-route.js",
-                    "~/Scripts/angular-animate.js",
-                    "~/Scripts/angular-sanitize.js",
-                    "~/Scripts/angular-ui/ui-bootstrap-tpls.js"
+                    "~/bower_components/angular/angular.js",
+                    "~/bower_components/angular/angular-route/angular-route.js",
+                    "~/bower_components/angular/angular-animate/angular-animate.js",
+                    "~/bower_components/angular/angular-sanitize/angular-sanitize.js"
+                    //,
+                    //"~/Scripts/angular-ui/ui-bootstrap-tpls.js"
                 ));
 
 
             bundles.Add(
                 new ScriptBundle("~/bundles/appScripts")
                     .Include($"~/{appDir}/app.js")
-                    .IncludeDirectory($"~/{appDir}", "*.js", true));
+                    .IncludeDirectory($"~/{appDir}", "*.js", true)
+                    .IncludeDirectory($"~/{appDir}/FilmTheme/js", "*.js", true)
+                );
+
+            //bundles.Add(
+            //    new ScriptBundle("~/bundles/filmThemeScripts")
+            //        .Include($"~/{appDir}/app.js")
+            //        .IncludeDirectory($"~/{appDir}", "*.js", true)
+            //        .IncludeDirectory($"~/{appDir}/FilmTheme/js", "*.js", true)
+            //);
+
+
 
 
 #if DEBUG || TEST

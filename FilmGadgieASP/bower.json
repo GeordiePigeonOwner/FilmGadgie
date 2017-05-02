@@ -26,6 +26,8 @@
     "angular-route": "v1.6.5-build.5353+sha.136a42a",
     "angular-animate": "v1.6.5-build.5353+sha.136a42a",
     "angular-bootstrap": "v1.1.0",
-    "font-awesome": "Font-Awesome#v4.7.0"
+    "font-awesome": "Font-Awesome#v4.7.0",
+    "angular-sanitize": "v1.6.5-build.5353+sha.136a42a",
+    "angular-boostrap-ui": "v1.1.0"
   }
 }
