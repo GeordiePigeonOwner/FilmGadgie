@@ -16,18 +16,21 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^2.2.1",
     "jquery-validation": "^1.16.0",
     "jquery-validation-unobtrusive": "^3.2.6",
     "modernizr": "^3.5.0",
     "bootstrap": "^3.3.7",
     "respond": "respond-minmax#^1.4.2",
-    "angular": "v1.6.5-build.5353+sha.136a42a",
-    "angular-route": "v1.6.5-build.5353+sha.136a42a",
-    "angular-animate": "v1.6.5-build.5353+sha.136a42a",
+    "angular": "v1.6.4",
+    "angular-route": "v1.6.4",
+    "angular-animate": "v1.6.4",
     "angular-bootstrap": "v1.1.0",
     "font-awesome": "Font-Awesome#v4.7.0",
-    "angular-sanitize": "v1.6.5-build.5353+sha.136a42a",
+    "angular-sanitize": "v1.6.4",
     "angular-boostrap-ui": "v1.1.0"
+  },
+  "resolutions": {
+    "angular": "1.6.5-build.5353+sha.136a42a"
   }
 }

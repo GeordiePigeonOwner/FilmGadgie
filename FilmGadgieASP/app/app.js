@@ -3,15 +3,15 @@
     "use strict";
 
     //creating the module
-    angular.module("app",["ngRoute","ngAnimate"])
+    angular.module("app", ['ngRoute'])
         .config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
             let baseUrl = "/";
             $routeProvider
                 .when(baseUrl,
                     {
                         templateUrl: "/app/FilmTheme/index.html",
-                        controller: "filmThemeHomeController"
-                    })
+                        controller: "filmThemeHomeController" 
+        })
                 .otherwise({ redirectTo: baseUrl });
 
             $locationProvider.html5Mode(true);

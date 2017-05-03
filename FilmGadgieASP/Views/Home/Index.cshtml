@@ -6,3 +6,7 @@
 <div class="row">
     <div ng-view></div>
 </div>
+@section Scripts{
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/appScripts")
+}

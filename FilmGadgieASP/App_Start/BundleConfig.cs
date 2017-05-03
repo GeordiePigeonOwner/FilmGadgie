@@ -39,9 +39,9 @@ namespace FilmGadgieASP
             bundles.Add(
                 new ScriptBundle("~/bundles/angular").Include(
                     "~/bower_components/angular/angular.js",
-                    "~/bower_components/angular/angular-route/angular-route.js",
-                    "~/bower_components/angular/angular-animate/angular-animate.js",
-                    "~/bower_components/angular/angular-sanitize/angular-sanitize.js"
+                    "~/bower_components/angular-route/angular-route.js",
+                    "~/bower_components/angular-animate/angular-animate.js",
+                    "~/bower_components/angular-sanitize/angular-sanitize.js"
                     //,
                     //"~/Scripts/angular-ui/ui-bootstrap-tpls.js"
                 ));
