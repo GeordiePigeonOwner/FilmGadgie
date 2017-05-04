@@ -66,6 +66,7 @@ a,button{
 	}
 	.navbar-default .navbar-nav>li>a.social.youtube:after { background-color: #DC271C; }
 	.navbar-default .navbar-nav>li>a.social.vimeo:after { background-color: #1BB7E8; }
+	.navbar-default .navbar-nav>li>a.social.twitter:after { background-color: #1BB7E8; }
 	.navbar-default .navbar-nav>li>a.social.insta:after { background-color: #1D5C7F; }
 	.navbar-default .navbar-nav>li>a.social:hover:after { height: 80px; }
 	.navbar-default .navbar-nav>li>a.social>i { position: relative; z-index: 2; }
