@@ -14,8 +14,8 @@
     <title> FilmGadgie &middot; Video Maker </title>
 
 
-    <!-- Bootstrap Core CSS -->
-    <link href="/app/FilmTheme/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Custom CSS -->
     <link href="/app/FilmTheme/css/custom.css" rel="stylesheet">
@@ -38,27 +38,21 @@
 
 <body>
 
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-4 hidden-xs">
-                <ul class="nav navbar-nav">
+<nav class="bg-black text-white">
+    <div class="container mx-auto px-4">
+        <div class="flex items-center">
+            <div class="hidden sm:block w-1/3">
+                <ul class="flex space-x-4">
                     <li><a href="https://www.youtube.com/channel/UCpgYQfeCc88p7vESb8nM3dQ" class="social youtube"><i class="ion-social-youtube-outline"></i></a></li>
                     <!--<li><a href="#" class="social vimeo"><i class="ion-social-vimeo-outline"></i></a></li>-->
                     <li><a href="https://twitter.com/FilmGadgie" class="social twitter"><i class="ion-social-twitter-outline"></i></a></li>
                 </ul>
             </div>
-
-            <div class="col-sm-4 col-xs-12">
-                <ul class="nav navbar-nav navbar-center">
-                    <li><a href="./" class="brand"> FilmGadgie <br> Film Maker</a></li>
-                </ul>
+            <div class="w-full sm:w-1/3 text-center">
+                <a href="./" class="brand block py-4"> FilmGadgie <br> Film Maker</a>
             </div>
-
-            <div class="col-xs-4 hidden-xs">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="email:Dad@LukeAndDad.co.uk">Dad@LukeAndDad.co.uk</a></li>
-                </ul>
+            <div class="hidden sm:block w-1/3 text-right">
+                <a href="email:Dad@LukeAndDad.co.uk">Dad@LukeAndDad.co.uk</a>
             </div>
         </div>
     </div>
@@ -70,38 +64,38 @@
 
 <div class="videos">
     <div class="container video-preview">
-        <div class="row">
+        <div class="grid grid-cols-2 sm:grid-cols-4">
 
-            <div class="col-md-3 col-sm-6 col-xs-6 active" data-id="47911018" data-source="vimeo">
+            <div class="relative cursor-pointer active" data-id="47911018" data-source="vimeo">
                 <!-- <img src="img/portfolio/video-preview-1.jpg" class="thumbnail-video" alt="video-preview-1">-->
                 <img src="/app/FilmTheme/img/portfolio/video-preview-1.jpg" class="thumbnail-video" alt="video-preview-1">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="DaYx4XmWEoI" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="DaYx4XmWEoI" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-2.jpg" class="thumbnail-video" alt="video-preview-2">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="txyhCiALf2Y" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="txyhCiALf2Y" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-3.jpg" class="thumbnail-video" alt="video-preview-3">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="rPmGtZAUxNs" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="rPmGtZAUxNs" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-4.jpg" class="thumbnail-video" alt="video-preview-4">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="_QqfifH3-rk" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="_QqfifH3-rk" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-5.jpg" class="thumbnail-video" alt="video-preview-5">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="Rk6_hdRtJOE" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="Rk6_hdRtJOE" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-6.jpg" class="thumbnail-video" alt="video-preview-6">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="-vm6ONrT1dw" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="-vm6ONrT1dw" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-7.jpg" class="thumbnail-video" alt="video-preview-7">
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6" data-id="qJmTbhC1O3s" data-source="youtube">
+            <div class="relative cursor-pointer" data-id="qJmTbhC1O3s" data-source="youtube">
                 <img src="/app/FilmTheme/img/portfolio/video-preview-8.jpg" class="thumbnail-video" alt="video-preview-8">
             </div>
         </div>
@@ -119,8 +113,8 @@
         <h1>About me</h1>
         <br><br>
 
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+        <div class="flex justify-center">
+            <div class="sm:w-2/3">
                 <p>
                     I started my journey as a vfx artist and film maker in Jan 2017. I have since started a you tube channel https://www.youtube.com/channel/UCpgYQfeCc88p7vESb8nM3dQ . I made a video with myself and my son and I like the process and the end result and the smile on my sons face just made me want to do more and more.
                     I don't have much experience yet but I really enjoy the creation process. I love learning new things and I learned many new things so far in this industry. I am flexible. I can adapt to new situations really quickly.
@@ -135,23 +129,23 @@
         <h1>My Skills</h1>
         <br><br><br>
 
-        <div class="row list-group">
-            <div class="col-md-3 col-sm-6 aerial-video">
+        <div class="grid grid-cols-2 md:grid-cols-4 list-group text-center">
+            <div class="aerial-video">
                 <i class="icon icon-technology"></i>
                 <h2>Fantastic? <br> VFX
                 </h2>
             </div>
-            <div class="col-md-3 col-sm-6 several-cameras">
+            <div class="several-cameras">
                 <i class="icon icon-old-video-camera"></i>
                 <h2>A <br> high-definition camera
                 </h2>
             </div>
-            <div class="col-md-3 col-sm-6 professional-programs">
+            <div class="professional-programs">
                 <i class="icon icon-play-button"></i>
                 <h2>Latest <br> professional <br> programs
                 </h2>
             </div>
-            <div class="col-md-3 col-sm-6 timelapse-video">
+            <div class="timelapse-video">
                 <i class="icon icon-play-button-of-two-triangles"></i>
                 <h2>Amazing <br> timelapse video
                 </h2>
@@ -243,8 +237,8 @@
         <i class="icon icon-reward"></i>
         <br><br><br>
 
-        <div class="row">
-            <div class="col-sm-8 col-sm-offset-2">
+        <div class="flex justify-center">
+            <div class="sm:w-2/3">
                 <p>
                     I started my journey as a vfx artist and film maker in Jan 2017. I have since started a you tube channel <a href="https://www.youtube.com/channel/UCpgYQfeCc88p7vESb8nM3dQ">FilmGadgie YouTube</a>. I made a video with myself and my son and I like the process and the end result and the smile on my sons face just made me want to do more and more.
                     I don't have much experience yet but I really enjoy the creation process. I love learning new things and I learned many new things so far in this industry. I am flexible. I can adapt to new situations really quickly.
@@ -259,7 +253,7 @@
         <p>Leave a message </p>
         <br>
 
-        <button class="btn btn-primary" data-toggle="modal" data-target="#CallMeModal">Message me now</button>
+        <button id="openModal" class="fg-btn">Message me now</button>
     </div>
 </section>
 
@@ -291,41 +285,23 @@
 
 
 <!-- Modal -->
-<div class="modal fade" id="CallMeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <form class="modal-form" action="index.php" method="post">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Quick call</h4>
-                </div>
-                <div class="modal-body">
-                    <input type="text" name="name" class="form-control" id="name" value="" placeholder="Your name" required=""/>
-                    <input type="text" name="phone" class="form-control" id="phone" value="" placeholder="Phone number" required=""/>
-                </div>
-                <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </div>
-            </div>
-        </form>
-    </div>
+<div id="callMeDialog" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center">
+    <form class="bg-white p-4 rounded" action="index.php" method="post">
+        <div class="flex justify-between items-center mb-4">
+            <h4 class="text-xl" id="myModalLabel">Quick call</h4>
+            <button type="button" id="closeModal" class="text-2xl">&times;</button>
+        </div>
+        <div class="flex flex-col space-y-2">
+            <input type="text" name="name" id="name" value="" placeholder="Your name" required="" class="border p-2 rounded"/>
+            <input type="text" name="phone" id="phone" value="" placeholder="Phone number" required="" class="border p-2 rounded"/>
+        </div>
+        <div class="mt-4 text-right">
+            <button type="submit" class="fg-btn">Submit</button>
+        </div>
+    </form>
 </div>
 
-<!-- jQuery -->
-<!-- Bootstrap Core JavaScript -->
-<!--<script type="text/javascript" src="js/jquery.js"></script>-->
-<!--<script type="text/javascript" src="js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/custom.js"></script>
-<script type="text/javascript" src="js/device.min.js"></script>
-<script type="text/javascript" src="js/jquery.smoothscroll.js"></script>
-
-<script type="text/javascript" src="js/parallax/jquery.parallax-1.1.3.js"></script>
-<script type="text/javascript" src="js/parallax/jquery.localscroll-1.2.7-min.js"></script>
-<script type="text/javascript" src="js/parallax/jquery.scrollTo-1.4.2-min.js"></script>-->
-
 <script type="text/javascript" src="/app/FilmTheme/js/jquery-latest.min.js"></script>
-<script type="text/javascript" src="/app/FilmTheme/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/app/FilmTheme/js/custom.js"></script>
 <script type="text/javascript" src="/app/FilmTheme/js/device.min.js"></script>
 <script type="text/javascript" src="/app/FilmTheme/js/jquery.smoothscroll.js"></script>
@@ -333,6 +309,16 @@
 <script type="text/javascript" src="/app/FilmTheme/js/parallax/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="/app/FilmTheme/js/parallax/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="/app/FilmTheme/js/parallax/jquery.scrollTo-1.4.2-min.js"></script>
+
+<script>
+  const openModal = document.getElementById('openModal');
+  const closeModal = document.getElementById('closeModal');
+  const dialog = document.getElementById('callMeDialog');
+  if (openModal && closeModal && dialog) {
+    openModal.addEventListener('click', () => dialog.classList.remove('hidden'));
+    closeModal.addEventListener('click', () => dialog.classList.add('hidden'));
+  }
+</script>
 
 </body>
 </html>
