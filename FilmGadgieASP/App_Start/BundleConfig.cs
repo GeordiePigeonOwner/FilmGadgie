@@ -54,6 +54,14 @@ namespace FilmGadgieASP
                     .IncludeDirectory($"~/{appDir}/FilmTheme/js", "*.js", true)
                 );
 
+            bundles.Add(
+                new StyleBundle("~/FilmTheme/css")
+                    .Include($"~/{appDir}/FilmTheme/css/bootstrap.min.css")
+                    .Include($"~/{appDir}/FilmTheme/css/custom.css")
+                    .Include($"~/{appDir}/FilmTheme/css/carousel.css")
+                   // .IncludeDirectory($"~/{appDir}/FilmTheme/css", "*.css", true)
+                    );
+
             //bundles.Add(
             //    new ScriptBundle("~/bundles/filmThemeScripts")
             //        .Include($"~/{appDir}/app.js")
