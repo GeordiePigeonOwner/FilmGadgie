@@ -1,13 +1,11 @@
 ﻿<!DOCTYPE html>
-<html lang="en" id="ng-app" ng-app="@ViewBag.InitModule">
+<html lang="en">
 <head>
     <title>@ViewBag.Title - FilmGadgie</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     @Scripts.Render("~/bundles/modernizr")
     @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    @Scripts.Render("~/FilmTheme/css")
-    <base href="@ViewBag.BaseUrl" />
+    @Styles.Render("~/FilmTheme/css")
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -39,8 +37,7 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
-    @Scripts.Render("~/bundles/angular")
-    @Scripts.Render("~/bundles/appScripts")
+    @Scripts.Render("~/FilmTheme/js")
     @RenderSection("Scripts", required: false)
 </body>
 </html>
