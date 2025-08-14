@@ -37,22 +37,9 @@ namespace FilmGadgieASP
 
             //js bundles
             bundles.Add(
-                new ScriptBundle("~/bundles/angular").Include(
-                    "~/bower_components/angular/angular.js",
-                    "~/bower_components/angular-route/angular-route.js",
-                    "~/bower_components/angular-animate/angular-animate.js",
-                    "~/bower_components/angular-sanitize/angular-sanitize.js"
-                    //,
-                    //"~/Scripts/angular-ui/ui-bootstrap-tpls.js"
-                ));
-
-
-            bundles.Add(
-                new ScriptBundle("~/bundles/appScripts")
-                    .Include($"~/{appDir}/app.js")
-                    .IncludeDirectory($"~/{appDir}", "*.js", true)
+                new ScriptBundle("~/FilmTheme/js")
                     .IncludeDirectory($"~/{appDir}/FilmTheme/js", "*.js", true)
-                );
+            );
 
             bundles.Add(
                 new StyleBundle("~/FilmTheme/css")
